@@ -1,9 +1,15 @@
 import Cookies from "js-cookie";
-import { encrypeJWT, decrypeJWT } from "./jwt";
 
-export const setCookie = async (key, data) => { 
-    Cookies.set(key, await encrypeJWT(data));
+import { encryptJWT, decryptJWT } from "./jwt";
+
+export const setCookie = async (key, data) => {
+    Cookies.set(key, await encryptJWT(data));
 };
 
-export const getCookie = async (key) => await decrypeJWT(Cookies.get(key));
-export const removeCookie = async (key) => Cookies.remove(key);
+export const getCookie = async (key) => {
+    return await decryptJWT(Cookies.get(key));
+};
+
+export const removeCookie = async (key) => {
+    Cookies.remove(key);
+};

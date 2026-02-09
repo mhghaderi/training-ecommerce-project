@@ -1,4 +1,4 @@
-import apiClient from "../../../../constants/axios.intercaptro";
+import apiClient from "../../../../constants/axios";
 
 export const refreshTokenApi = async (data) => {
     try {
