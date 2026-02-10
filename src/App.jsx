@@ -1,8 +1,6 @@
 import React, { useEffect } from "react";
 import { getCookie, removeCookie, setCookie } from "./utils/helpers/cookie";
 const App = () => {
-
-
     // create Cookie ============
     // useEffect(() => {
     //     const createCookie = async () => {
@@ -15,9 +13,6 @@ const App = () => {
 
     //     createCookie();
     // }, []);
-
-
-
 
     return (
         <div className="flex justify-center items-center min-h-screen">

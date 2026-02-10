@@ -4,13 +4,12 @@ import "./index.css";
 import App from "./App.jsx";
 import Providers from "./providers/Providers.jsx";
 
-
 const root = createRoot(document.getElementById("root"));
 
 root.render(
-    <StrictMode>
-        <Providers>
-            <App />
-        </Providers>
-    </StrictMode>,
+     <StrictMode>
+          <Providers>
+               <App />
+          </Providers>
+     </StrictMode>,
 );

@@ -1,4 +1,4 @@
-import apiClient from "../../../../constants/axios";
+import apiClient from "../../../../constants/axios.intercaptro";
 
 const getProductsApi = async () => {
     try {
