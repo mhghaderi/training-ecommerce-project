@@ -1,0 +1,58 @@
+src/
+│
+├── api/
+│   ├── apiClient.js        ✅ مغز ارتباط با سرور
+│   │
+│   ├── auth.api.js         ⏳ login / register / change password
+│   ├── book.api.js         ⏳ books / images
+│   ├── author.api.js       ⏳ authors CRUD
+│   ├── cart.api.js         ⏳ cart operations
+│   ├── order.api.js        ⏳ orders
+│   └── payment.api.js      ⏳ payment flow
+│
+├── stores/
+│   ├── auth.store.js       ✅ auth state (tokens, user)
+│   ├── cart.store.js       ⏳ cart state (optional cache)
+│
+├── pages/
+│   ├── auth/
+│   │   ├── Login.jsx
+│   │   └── Register.jsx
+│   │
+│   ├── books/
+│   │   ├── BookList.jsx
+│   │   ├── BookDetails.jsx
+│   │   └── BookCreate.jsx
+│   │
+│   ├── cart/
+│   │   └── Cart.jsx
+│   │
+│   ├── orders/
+│   │   └── Orders.jsx
+│   │
+│   └── payment/
+│       └── VerifyPayment.jsx
+│
+├── components/
+│   ├── common/
+│   │   ├── Button.jsx
+│   │   ├── Input.jsx
+│   │   └── Loader.jsx
+│   │
+│   └── layout/
+│       ├── Header.jsx
+│       └── ProtectedRoute.jsx
+│
+├── hooks/
+│   └── useAuth.js          ⏳ glue بین store و UI
+│
+├── utils/
+│   ├── constants.js
+│   ├── validators.js
+│   └── formatters.js
+│
+├── router/
+│   └── index.jsx
+│
+├── App.jsx
+└── main.jsx

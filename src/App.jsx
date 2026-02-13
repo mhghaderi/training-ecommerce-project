@@ -1,7 +1,9 @@
 import React, { useEffect } from "react";
 import TestProducts from "./services/testApi";
-import { Login } from "./pages/Login";
-import RegisterForm from "./pages/RegisterForm";
+
+
+import Login from "./pages/auth/Login";
+
 const App = () => {
     // create Cookie ============
     // useEffect(() => {
@@ -18,10 +20,7 @@ const App = () => {
 
     return (
         <div className="flex justify-center items-center min-h-screen">
-            {/* <h2>access_token : </h2> */}
-            {/* <TestProducts /> */}
-            {/* <Login /> */}
-            <RegisterForm/>
+            <Login />
         </div>
     );
 };
